@@ -1,42 +1,53 @@
-html, body {
-  background: #0a0a0f;
-}
-
-body {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 0 20px;
-  color: #e6e6e6;
-}
-
-h1 {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #00fff2, #a020f0, #ff00c8, #a020f0, #00fff2);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: 0 0 20px rgba(160, 32, 240, 0.6);
-  animation: flame-flow 3s linear infinite;
-}
-
-@keyframes flame-flow {
-  0% { background-position: 0% center; }
-  100% { background-position: 200% center; }
+nav {
+  margin-bottom: 40px;
 }
 
 nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: 1px solid #a020f0;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
   color: #00fff2;
   text-decoration: none;
-  margin-right: 4px;
+  transition: all 0.25s ease;
 }
 
 nav a:hover {
-  color: #ff00c8;
-  text-shadow: 0 0 8px #ff00c8;
+  background: #00fff2;
+  color: #0a0a0f;
+  box-shadow: 0 0 12px #00fff2;
 }
 
 a {
-  color: #a020f0;
+  color: #ff00c8;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #ff00c8;
+}body.home {
+  background-image: linear-gradient(rgba(10,10,15,0.85), rgba(10,10,15,0.85)), url("home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.story {
+  background-image: linear-gradient(rgba(10,10,15,0.85), rgba(10,10,15,0.85)), url("story-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.services {
+  background-image: linear-gradient(rgba(10,10,15,0.85), rgba(10,10,15,0.85)), url("services-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
