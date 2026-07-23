@@ -1,15 +1,42 @@
+html, body {
+  background: #0a0a0f;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #e6e6e6;
+}
+
 h1 {
   font-size: 3rem;
-  background: linear-gradient(90deg, #ff0000, #ff7300, #ffea00, #ff7300, #ff0000);
+  background: linear-gradient(90deg, #00fff2, #a020f0, #ff00c8, #a020f0, #00fff2);
   background-size: 200% auto;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0 0 15px rgba(255, 100, 0, 0.6);
+  text-shadow: 0 0 20px rgba(160, 32, 240, 0.6);
   animation: flame-flow 3s linear infinite;
 }
 
 @keyframes flame-flow {
   0% { background-position: 0% center; }
   100% { background-position: 200% center; }
+}
+
+nav a {
+  color: #00fff2;
+  text-decoration: none;
+  margin-right: 4px;
+}
+
+nav a:hover {
+  color: #ff00c8;
+  text-shadow: 0 0 8px #ff00c8;
+}
+
+a {
+  color: #a020f0;
 }
